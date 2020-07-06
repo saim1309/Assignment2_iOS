@@ -30,7 +30,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WZD-JY-Bbh">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WZD-JY-Bbh">
                                         <rect key="frame" x="0.0" y="44" width="375" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -38,12 +38,12 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZKK-pV-11y">
                                         <rect key="frame" x="0.0" y="88" width="375" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uDh-09-8WV">
                                         <rect key="frame" x="0.0" y="132" width="375" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXs-Fa-rG1">
                                         <rect key="frame" x="0.0" y="176" width="375" height="40"/>
@@ -121,7 +121,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a3L-3A-WG4">
                                         <rect key="frame" x="0.0" y="54" width="375" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJg-hV-fbR">
                                         <rect key="frame" x="0.0" y="108" width="375" height="40"/>
@@ -222,9 +222,8 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="clockInOut"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJg-Q8-agh">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJg-Q8-agh">
                                 <rect key="frame" x="17" y="399" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="flashlight"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOU-o1-IOA">
@@ -247,31 +246,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flash Light" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWw-Ib-ror">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Flash Light" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWw-Ib-ror">
                                 <rect key="frame" x="24" y="526" width="89" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Panic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atO-mf-C5u">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Panic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atO-mf-C5u">
                                 <rect key="frame" x="277" y="527" width="44" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBi-7h-sGU">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBi-7h-sGU">
                                 <rect key="frame" x="249" y="399" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="panic"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="gh8-Nl-BV5" firstAttribute="top" secondItem="jrE-VF-BxY" secondAttribute="bottom" constant="55" id="0Aq-fL-doU"/>
+                            <constraint firstItem="5cb-0l-pxG" firstAttribute="trailing" secondItem="atO-mf-C5u" secondAttribute="trailing" constant="54" id="0VO-qL-pfS"/>
                             <constraint firstItem="vNm-t6-Jzr" firstAttribute="top" secondItem="SOU-o1-IOA" secondAttribute="bottom" constant="8" id="H1I-qI-Rxt"/>
                             <constraint firstItem="SOU-o1-IOA" firstAttribute="top" secondItem="jrE-VF-BxY" secondAttribute="bottom" constant="55" id="HwZ-zC-A3g"/>
+                            <constraint firstItem="atO-mf-C5u" firstAttribute="top" secondItem="UBi-7h-sGU" secondAttribute="bottom" constant="28" id="Npg-zB-8de"/>
+                            <constraint firstItem="jWw-Ib-ror" firstAttribute="leading" secondItem="5cb-0l-pxG" secondAttribute="leading" constant="24" id="QtC-BD-KcY"/>
                             <constraint firstItem="jrE-VF-BxY" firstAttribute="top" secondItem="5cb-0l-pxG" secondAttribute="top" constant="19" id="Tc6-vk-S3B"/>
                             <constraint firstItem="jrE-VF-BxY" firstAttribute="leading" secondItem="5cb-0l-pxG" secondAttribute="leading" constant="74" id="aHv-7q-eR9"/>
                             <constraint firstItem="5cb-0l-pxG" firstAttribute="trailing" secondItem="vNm-t6-Jzr" secondAttribute="trailing" constant="38" id="aa0-Cd-OKJ"/>
@@ -279,6 +278,7 @@
                             <constraint firstItem="noU-WH-ZOA" firstAttribute="top" secondItem="gh8-Nl-BV5" secondAttribute="bottom" constant="8" id="oEv-fW-ZwE"/>
                             <constraint firstItem="noU-WH-ZOA" firstAttribute="leading" secondItem="5cb-0l-pxG" secondAttribute="leading" constant="16" id="ovr-6z-nQO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SOU-o1-IOA" secondAttribute="trailing" constant="10" id="rzS-39-wCn"/>
+                            <constraint firstItem="jWw-Ib-ror" firstAttribute="top" secondItem="LJg-Q8-agh" secondAttribute="bottom" constant="27" id="waF-A7-OFH"/>
                             <constraint firstItem="gh8-Nl-BV5" firstAttribute="leading" secondItem="5cb-0l-pxG" secondAttribute="leading" constant="10" id="wli-C3-JzR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5cb-0l-pxG"/>
