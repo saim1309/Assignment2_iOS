@@ -38,12 +38,12 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZKK-pV-11y">
                                         <rect key="frame" x="0.0" y="88" width="375" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uDh-09-8WV">
                                         <rect key="frame" x="0.0" y="132" width="375" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXs-Fa-rG1">
                                         <rect key="frame" x="0.0" y="176" width="375" height="40"/>
@@ -121,7 +121,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a3L-3A-WG4">
                                         <rect key="frame" x="0.0" y="54" width="375" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJg-hV-fbR">
                                         <rect key="frame" x="0.0" y="108" width="375" height="40"/>
@@ -207,15 +207,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Home Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfY-S7-fyr">
-                                <rect key="frame" x="41" y="248" width="245" height="41"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="jrE-VF-BxY">
+                                <rect key="frame" x="74" y="63" width="226" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="037-PG-q8Y"/>
+                                    <constraint firstAttribute="height" constant="80" id="l4Z-9n-7si"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh8-Nl-BV5">
+                                <rect key="frame" x="10" y="198" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qAD-z4-qxj"/>
+                                    <constraint firstAttribute="width" constant="100" id="vf0-W1-ML0"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="clockInOut"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJg-Q8-agh">
+                                <rect key="frame" x="17" y="399" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="Button" image="flashlight"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOU-o1-IOA">
+                                <rect key="frame" x="249" y="198" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="O92-Ps-XVG"/>
+                                    <constraint firstAttribute="width" constant="100" id="nwB-ob-Il7"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="schedule"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clock In/Out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noU-WH-ZOA">
+                                <rect key="frame" x="16" y="306" width="101" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNm-t6-Jzr">
+                                <rect key="frame" x="261" y="306" width="76" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flash Light" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWw-Ib-ror">
+                                <rect key="frame" x="24" y="526" width="89" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Panic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atO-mf-C5u">
+                                <rect key="frame" x="277" y="527" width="44" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBi-7h-sGU">
+                                <rect key="frame" x="249" y="399" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="panic"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gh8-Nl-BV5" firstAttribute="top" secondItem="jrE-VF-BxY" secondAttribute="bottom" constant="55" id="0Aq-fL-doU"/>
+                            <constraint firstItem="vNm-t6-Jzr" firstAttribute="top" secondItem="SOU-o1-IOA" secondAttribute="bottom" constant="8" id="H1I-qI-Rxt"/>
+                            <constraint firstItem="SOU-o1-IOA" firstAttribute="top" secondItem="jrE-VF-BxY" secondAttribute="bottom" constant="55" id="HwZ-zC-A3g"/>
+                            <constraint firstItem="jrE-VF-BxY" firstAttribute="top" secondItem="5cb-0l-pxG" secondAttribute="top" constant="19" id="Tc6-vk-S3B"/>
+                            <constraint firstItem="jrE-VF-BxY" firstAttribute="leading" secondItem="5cb-0l-pxG" secondAttribute="leading" constant="74" id="aHv-7q-eR9"/>
+                            <constraint firstItem="5cb-0l-pxG" firstAttribute="trailing" secondItem="vNm-t6-Jzr" secondAttribute="trailing" constant="38" id="aa0-Cd-OKJ"/>
+                            <constraint firstItem="5cb-0l-pxG" firstAttribute="trailing" secondItem="jrE-VF-BxY" secondAttribute="trailing" constant="75" id="hRD-hr-jZ8"/>
+                            <constraint firstItem="noU-WH-ZOA" firstAttribute="top" secondItem="gh8-Nl-BV5" secondAttribute="bottom" constant="8" id="oEv-fW-ZwE"/>
+                            <constraint firstItem="noU-WH-ZOA" firstAttribute="leading" secondItem="5cb-0l-pxG" secondAttribute="leading" constant="16" id="ovr-6z-nQO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SOU-o1-IOA" secondAttribute="trailing" constant="10" id="rzS-39-wCn"/>
+                            <constraint firstItem="gh8-Nl-BV5" firstAttribute="leading" secondItem="5cb-0l-pxG" secondAttribute="leading" constant="10" id="wli-C3-JzR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5cb-0l-pxG"/>
                     </view>
                     <navigationItem key="navigationItem" id="e9h-xj-GXI"/>
@@ -264,5 +329,10 @@
     </scenes>
     <resources>
         <image name="bg" width="313" height="208.5"/>
+        <image name="clockInOut" width="300" height="300"/>
+        <image name="flashlight" width="350" height="289"/>
+        <image name="logo" width="461.5" height="157.5"/>
+        <image name="panic" width="275" height="183"/>
+        <image name="schedule" width="896" height="518"/>
     </resources>
 </document>
