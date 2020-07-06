@@ -31,7 +31,7 @@ class LoginController: UIViewController {
             }
         }
         return false;
-    }//end of check user
+    }//end of check users
     
     //function to remove keyboard when touched outside text fields
 
